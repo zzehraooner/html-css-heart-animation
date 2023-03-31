@@ -1,0 +1,88 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+   
+    <title>İLAYDA YELİN KAYA</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@300;400;600;700&display=swap');
+    *{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+    }
+article{
+margin:0;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.heart{
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    transform: rotate(45deg);
+    position: relative;
+    animation: kalp 1s linear infinite;
+
+}
+@keyframes kalp {
+    0%{
+        transform: rotate(45deg) scale(1);
+    }
+    25%{
+        transform: rotate(45deg) scale(.7);
+    }
+    40%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    80%{
+        transform: rotate(45deg) scale(.8);
+    }
+    100%{
+        transform: rotate(45deg) scale(1);
+    }
+}
+.heart:before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color:red;
+    top: -99px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.heart:after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color:red;
+    top: 0px;
+    left:-99px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+
+</style>
+<body>
+     <article>
+            <div class="heart">
+                
+            </div>
+    </article>
+        
+</body>
+</html>
